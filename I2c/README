@@ -1,0 +1,9 @@
+I2c need to enable
+
+1. /etc/modprobe.d/raspi-blacklist.conf
+   mark: blacklist i2c-bcm2708
+2. /etc/modules
+   add : i2c-dev
+3. reboot
+4. test i2c
+	i2cdetect -y 1
